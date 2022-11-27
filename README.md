@@ -1,12 +1,10 @@
 ```
-[Link To Github](https://github.com/MartinCespedes/Generate_Random_Password/)
+[Link To Github](https://github.com/MartinCespedes/Node_Js_README_Generator/)
 ```
 
-
 ```
-## User Story ::bulb::
+##  :bulb: User Story
 ```
-
 
 ```
 - AS A developer
@@ -14,11 +12,9 @@
 - SO THAT I can quickly create a professional README for a new project
 ```
 
-
 ```
-## Acceptance Criteria
+## :white_check_mark: Acceptance Criteria
 ```
-
 
 ```
 - GIVEN a command-line application that accepts user input
