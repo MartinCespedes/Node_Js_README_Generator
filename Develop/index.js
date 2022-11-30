@@ -108,7 +108,11 @@ function writeToFile(fileName, data) {
 }
 
 //Function to initialize app//
-function init() {}
+function init() {
+  inquirer.prompt(questions).then((data) => {
+    writeToFile("README.md", data);
+  });
+}
 
 //Function call to initialize app//
 init();
