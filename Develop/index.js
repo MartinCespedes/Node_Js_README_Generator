@@ -81,6 +81,12 @@ const questions = [
   },
   {
     type: "input",
+    name: "badges",
+    message: "What is your Badge?",
+    //Badges for street cred//
+  },
+  {
+    type: "input",
     name: "username",
     message: "What is your GitHub username?",
     //Github username information//
