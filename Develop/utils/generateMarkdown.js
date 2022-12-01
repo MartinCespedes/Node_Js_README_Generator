@@ -12,63 +12,64 @@ function renderLicenseSection(license) {}
 
 //Created function to generate markdown for README
 const generateMarkdown = (data) => {
-  return `## ${data.title}
+  return `## :building_construction: ${data.title}
 
-  ## Motivation
+  ## :sunny: Motivation
 
   ${data.motivation}
 
-  ## Project Motivation
+  ## :grin: Project Motivation
 
   ${data.projectMotivation}
 
-  ## What issues does it solve?
+  ## :bug: What issues does it solve?
 
   ${data.resolve}
 
-  ## What did I learn?
+  ## :bulb: What did I learn?
 
   ${data.lesson}
 
-   ## Description
+   ## :page_facing_up: Description
 
   ${data.description}
   
-  ## Table of Contents
-  -- [Installation](##Installation)
-  -- [Usage](##Ssage)
-  -- [Contribute](##Contribute)
-  -- [Tests](#Tests)
-  -- [Questions](#Questions)
+  ## :bookmark_tabs: Table of Contents
+
+  [Installation](##Installation)
+  [Usage](##Ssage)
+  [Contribute](##Contribute)
+  [Tests](##Tests)
+  [Questions](##Questions)
 
 
-   ## Installation
+   ## :open_file_folder: Installation
 
   ${data.installation}
 
-  ## Usage
+  ##  :hammer_and_wrench: Usage
 
   ${data.usage}
 
-  ## Contribute
+  ## :moneybag: Contribute :moneybag:
 
   ${data.contribute}
 
-  ## Tests
+  ## :writing_hand: Tests
 
   ${data.tests}
 
-  ## Questions
+  ## :question: Questions
 
-    -- If you have any questions: [Link to Github](https://github.com${data.username})
-    -- Email contact info :[${data.email}]
+  If you have any questions: :globe_with_meridians:[Link to Github](https://github.com${data.username})
+  Email contact info:  :incoming_envelope: [${data.email}]
 
   
-  ## Licenses  
+  ## :white_check_mark: Licenses  
 
   ${data.license}
 
-  ## Badges
+  ## :name_badge:  Badges
 
   ${data.badges}
   `;
