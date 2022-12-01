@@ -35,11 +35,11 @@ const generateMarkdown = (data) => {
   ${data.description}
   
   ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribute](#contribute)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  -- [Installation](##Installation)
+  -- [Usage](##Ssage)
+  -- [Contribute](##Contribute)
+  -- [Tests](#Tests)
+  -- [Questions](#Questions)
 
 
    ## Installation
@@ -60,7 +60,8 @@ const generateMarkdown = (data) => {
 
   ## Questions
 
-    - If you have any questions:
+    -- If you have any questions: [Link to Github](https://github.com${data.username})
+    -- Email contact info :[${data.email}]
 
   
   ## Licenses  
@@ -70,14 +71,6 @@ const generateMarkdown = (data) => {
   ## Badges
 
   ${data.badges}
-
-
-  ${data.username}
-
-
-  ${data.email}
-
-
   `;
 };
 
