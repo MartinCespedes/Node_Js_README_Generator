@@ -61,8 +61,8 @@ const generateMarkdown = (data) => {
 
   ## :question: Questions
 
-  If you have any questions: :globe_with_meridians:[Link to Github](https://github.com${data.username})
-  Email contact info:  :incoming_envelope: [${data.email}]
+  - If you have any questions: :globe_with_meridians:[Link to Github](https://github.com${data.username})
+  - Email contact info:  :incoming_envelope: [${data.email}]
 
   
   ## :white_check_mark: Licenses  
