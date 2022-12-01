@@ -7,27 +7,27 @@ const { generateMarkdown } = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    name: "project title",
+    name: "title",
     message: "What is your desired title for the project?",
     //Project title//
   },
   {
     type: "input",
-    name: "motivation description",
+    name: "motivation",
     message: "What was your motivation?",
     //Motivation for developing//
+  },
+  {
+    type: "input",
+    name: "projectMotivation",
+    message: "Why did you build this project?",
+    //Project motivation//
   },
   {
     type: "input",
     name: "description",
     message: "Pleave write a description about your project.",
     //Provide information about your project//
-  },
-  {
-    type: "input",
-    name: "project motivation",
-    message: "Why did you build this project?",
-    //Project motivation//
   },
   {
     type: "input",
