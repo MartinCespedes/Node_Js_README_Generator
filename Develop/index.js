@@ -68,12 +68,6 @@ const questions = [
     //Test intructions//
   },
   {
-    type: "input",
-    name: "questions",
-    message: "Questions about this project",
-    //Questions about the project//
-  },
-  {
     type: "list",
     name: "license",
     message: "Select a license from these options:",
