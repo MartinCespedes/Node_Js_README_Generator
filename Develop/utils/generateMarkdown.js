@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//Function that returns a license badge based on which license is passed in//
+//If there is no license, return an empty string//
 function renderLicenseBadge(license) {
   let badge = "";
 
@@ -10,12 +10,90 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+//Function that returns the license link
+//If there is no license, return an empty string
+function renderLicenseLink(license) {
+  let licenseLink;
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+  switch (license) {
+    case "Apache":
+      licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+      break;
+
+    case "Boost":
+      licenseLink = "https://www.boost.org/LICENSE_1_0.txt";
+      break;
+
+    case "BSD":
+      licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
+      break;
+
+    case "Creative Commons":
+      licenseLink = "http://creativecommons.org/publicdomain/zero/1.0/";
+      break;
+
+    case "Eclipse":
+      licenseLink = "https://opensource.org/licenses/EPL-1.0";
+      break;
+
+    case "GNU":
+      licenseLink = "https://www.gnu.org/licenses/gpl-3.0";
+      break;
+
+    case "The Organization for Ethical Source":
+      licenseLink = "https://firstdonoharm.dev";
+      break;
+
+    case "IBM":
+      licenseLink = "https://opensource.org/licenses/IPL-1.0";
+      break;
+
+    case "ISC":
+      licenseLink = "https://opensource.org/licenses/ISC";
+      break;
+
+    case "MIT":
+      licenseLink = "https://opensource.org/licenses/MIT";
+      break;
+
+    case "Mozilla":
+      licenseLink = "https://opensource.org/licenses/MPL-2.0";
+      break;
+
+    case "Open Data Commons":
+      licenseLink = "https://opendatacommons.org/licenses/by/";
+      break;
+
+    case "Perl":
+      licenseLink = "https://opensource.org/licenses/Artistic-2.0";
+      break;
+
+    case "SIL":
+      licenseLink = "https://opensource.org/licenses/OFL-1.1";
+      break;
+
+    case "Unlicense":
+      licenseLink = "http://unlicense.org/";
+      break;
+
+    case "WTFPL":
+      licenseLink = "http://www.wtfpl.net/about/";
+      break;
+
+    case "Zlib":
+      licenseLink = "https://opensource.org/licenses/Zlib";
+      break;
+
+    default:
+      licenseLink = "";
+      break;
+  }
+
+  return licenseLink;
+}
+
+//Function that returns the license section of README//
+//If there is no license, return an empty string//
 function renderLicenseSection(license) {}
 
 //Created function to generate markdown for README
