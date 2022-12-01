@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   let badge = "";
 
   if (license != "NONE") {
-    badge = "![License Badge](https://shields.io/badge/license-" + license;
+    badge = "![License Badge](https://shields.io/badge/license-)" + license;
   }
 
   return badge;
@@ -94,7 +94,19 @@ function renderLicenseLink(license) {
 
 //Function that returns the license section of README//
 //If there is no license, return an empty string//
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseSection = "";
+
+  if (license != "NONE") {
+    licenseSection += "## License\n";
+    licenseSection +=
+      "See" +
+      renderLicenseLink(license) +
+      " to get detailed information about this license\n";
+  }
+
+  return licenseSection;
+}
 
 //Created function to generate markdown for README
 const generateMarkdown = (anwers) => {
