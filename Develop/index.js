@@ -3,6 +3,28 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const { generateMarkdown } = require("./utils/generateMarkdown.js");
 
+//Const of licences//
+const licenses = [
+  "NONE",
+  "Apache",
+  "Boost",
+  "BSD",
+  "Creative Commons",
+  "Eclipse",
+  "GNU",
+  "The Organization for Ethical Source",
+  "IBM",
+  "ISC",
+  "MIT",
+  "Mozilla",
+  "Open Data Commons",
+  "Perl",
+  "SIL",
+  "Unlicense",
+  "WTFPL",
+  "Zlib",
+];
+
 //An array of questions for user input//
 const questions = [
   {
@@ -71,26 +93,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Select a license from these options:",
-    choices: [
-      "None",
-      "Apache",
-      "Boost",
-      "BSD",
-      "Creative Commons",
-      "Eclipse",
-      "GNU",
-      "The Organization for Ethical Source",
-      "IBM",
-      "ISC",
-      "MIT",
-      "Mozilla",
-      "Open Data Commons",
-      "Perl",
-      "SIL",
-      "Unlicense",
-      "WTFPL",
-      "Zlib",
-    ],
+    choices: licenses,
     //License information//
   },
   {
