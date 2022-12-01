@@ -1,6 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  let badge = "";
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -11,33 +13,33 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 //Created function to generate markdown for README
-const generateMarkdown = (data) => {
-  return `## :building_construction: ${data.title}
+const generateMarkdown = (anwers) => {
+  return `## :building_construction: ${anwers.title}
 
   ## :sunny: Motivation
 
-  ${data.motivation}
+  ${anwers.motivation}
 
   ## :grin: Project Motivation
 
-  ${data.projectMotivation}
+  ${anwers.projectMotivation}
 
   ## :bug: What issues does it solve?
 
-  ${data.resolve}
+  ${anwers.resolve}
 
   ## :bulb: What did I learn?
 
-  ${data.lesson}
+  ${anwers.lesson}
 
    ## :page_facing_up: Description
 
-  ${data.description}
+  ${anwers.description}
   
   ## :bookmark_tabs: Table of Contents
 
   [Installation](##Installation)
-  [Usage](##Ssage)
+  [Usage](##Usage)
   [Contribute](##Contribute)
   [Tests](##Tests)
   [Questions](##Questions)
@@ -45,33 +47,33 @@ const generateMarkdown = (data) => {
 
    ## :open_file_folder: Installation
 
-  ${data.installation}
+  ${anwers.installation}
 
   ##  :hammer_and_wrench: Usage
 
-  ${data.usage}
+  ${anwers.usage}
 
   ## :moneybag: Contribute :moneybag:
 
-  ${data.contribute}
+  ${anwers.contribute}
 
   ## :writing_hand: Tests
 
-  ${data.tests}
+  ${anwers.tests}
 
   ## :question: Questions
 
-  - If you have any questions: :globe_with_meridians:[Link to Github](https://github.com${data.username})
-  - Email contact info:  :incoming_envelope: [${data.email}]
+  - If you have any questions: :globe_with_meridians:[Link to Github](https://github.com${anwers.username})
+  - Email contact info:  :incoming_envelope: [${anwers.email}]
 
   
   ## :white_check_mark: Licenses  
 
-  ${data.license}
+  ${anwers.license}
 
   ## :name_badge:  Badges
 
-  ${data.badges}
+  ${anwers.badges}
   `;
 };
 
