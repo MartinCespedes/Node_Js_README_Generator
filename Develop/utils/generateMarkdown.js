@@ -109,67 +109,76 @@ function renderLicenseSection(license) {
 }
 
 //Created function to generate markdown for README
-const generateMarkdown = (anwers) => {
-  return `## :building_construction: ${anwers.title}
+const generateMarkdown = (answers) => {
+  return `## ${answers.title}
 
-  ## :sunny: Motivation
+  ${renderLicenseBadge(answers.license)}
 
-  ${anwers.motivation}
+  ${renderLicenseSection(answers.license)}
 
-  ## :grin: Project Motivation
+  ## Motivation
 
-  ${anwers.projectMotivation}
+  ${answers.motivation}
 
-  ## :bug: What issues does it solve?
+  ## Project Motivation
 
-  ${anwers.resolve}
+  ${answers.projectMotivation}
 
-  ## :bulb: What did I learn?
+  ## What issues does it solve?
 
-  ${anwers.lesson}
+  ${answers.resolve}
 
-   ## :page_facing_up: Description
+  ## What did I learn?
 
-  ${anwers.description}
+  ${answers.lesson}
+
+  ##  Description
+
+  ${answers.description}
   
-  ## :bookmark_tabs: Table of Contents
+  ## Table of Contents
 
-  [Installation](##Installation)
-  [Usage](##Usage)
-  [Contribute](##Contribute)
-  [Tests](##Tests)
-  [Questions](##Questions)
+  [Installation](#installation)
 
+  [Usage](#usage)
 
-   ## :open_file_folder: Installation
+  [Contribute](#contribute)
 
-  ${anwers.installation}
+  [Tests](#tests)
 
-  ##  :hammer_and_wrench: Usage
+  [Questions](#questions)
 
-  ${anwers.usage}
+  ## Installation
 
-  ## :moneybag: Contribute :moneybag:
+  ${answers.installation}
 
-  ${anwers.contribute}
+  ##  Usage
 
-  ## :writing_hand: Tests
+  ${answers.usage}
 
-  ${anwers.tests}
+  ## Contribute
 
-  ## :question: Questions
+  ${answers.contribute}
 
-  - If you have any questions: :globe_with_meridians:[Link to Github](https://github.com${anwers.username})
-  - Email contact info:  :incoming_envelope: [${anwers.email}]
+  ## Tests
+
+  ${answers.tests}
+
+  ## Questions
+
+  - If you have any questions:[Link to Github](https://github.com${
+    answers.username
+  })
+  - Email contact info:[${answers.email}]
 
   
-  ## :white_check_mark: Licenses  
+  ## Licenses  
 
-  ${anwers.license}
+  ${answers.license}
 
-  ## :name_badge:  Badges
+  ## Badges
 
-  ${anwers.badges}
+  ${answers.badges}
   `;
 };
 
