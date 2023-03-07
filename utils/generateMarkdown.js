@@ -112,10 +112,6 @@ function renderLicenseSection(license) {
 const generateMarkdown = (answers) => {
   return `## ${answers.title}
 
-  ${renderLicenseBadge(answers.license)}
-
-  ${renderLicenseSection(answers.license)}
-
   ## Motivation
 
   ${answers.motivation}
@@ -132,7 +128,7 @@ const generateMarkdown = (answers) => {
 
   ${answers.lesson}
 
-  ##  Description
+  ## Description
 
   ${answers.description}
   
@@ -152,7 +148,7 @@ const generateMarkdown = (answers) => {
 
   ${answers.installation}
 
-  ##  Usage
+  ## Usage
 
   ${answers.usage}
 
@@ -179,6 +175,8 @@ const generateMarkdown = (answers) => {
   ## Badges
 
   ${answers.badges}
+  
+  ${renderLicenseBadge(answers.license)}
   `;
 };
 
