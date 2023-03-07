@@ -124,7 +124,7 @@ node index.js
 
 ## Application Screenshot Preview
 
-[README GENERATOR](./assets/Application_ScreenShot_NODEJS.png)
+![README GENERATOR](./assets/Application_ScreenShot_NODEJS.png)
 
 ## Resources/Credit
 
