@@ -35,12 +35,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "motivation",
-    message: "What was your motivation?",
-    //Motivation for developing//
-  },
-  {
-    type: "input",
     name: "projectMotivation",
     message: "Why did you build this project?",
     //Project motivation//
@@ -56,12 +50,6 @@ const questions = [
     name: "resolve",
     message: "What issues does it resolve?",
     //What problem does it solve?//
-  },
-  {
-    type: "input",
-    name: "lesson",
-    message: "What was your most valuable lesson?",
-    //What did I learn?//
   },
   {
     type: "input",

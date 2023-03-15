@@ -112,10 +112,6 @@ function renderLicenseSection(license) {
 const generateMarkdown = (answers) => {
   return `## ${answers.title}
 
-  ## Motivation
-
-  ${answers.motivation}
-
   ## Project Motivation
 
   ${answers.projectMotivation}
@@ -123,10 +119,6 @@ const generateMarkdown = (answers) => {
   ## What issues does it solve?
 
   ${answers.resolve}
-
-  ## What did I learn?
-
-  ${answers.lesson}
 
   ## Description
 
