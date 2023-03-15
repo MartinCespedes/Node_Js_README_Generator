@@ -144,6 +144,10 @@ const generateMarkdown = (answers) => {
 
   [Questions](#questions)
 
+  ${renderLicenseSection(
+    answers.license
+  )}  // Add this line to include the license section
+
   ## Installation
 
   ${answers.installation}
